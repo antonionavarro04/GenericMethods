@@ -1,5 +1,5 @@
 // ! Script version de BB que se mostrará en el menú principal
-const version = 'v1.6.8f';
+const version = 'v2.0';
 const title = "Generic Methods";
 
 var versionElement = document.getElementById('version');
