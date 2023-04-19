@@ -12,8 +12,9 @@ import java.util.Locale;
  * Esta clase contiene todos los métodos para el manejo sencillo de Arrays, en el se pueden encontrar métodos de impresión, rellenado, copia, inserción y eliminación
  * Esta orientada a su uso en el examen del Tema 5 de programación
  * Falta por implementar el rellenado de arrays[][]
+ * Falta por implementar todos los arrays de Objetos[] && [][]
  * @author Antonio Navarro
- * @version Beta 1.1
+ * @version Beta 2.0
  * @see java.lang.System
  * @see java.util.Arrays
  * @see java.lang.Math
@@ -1541,6 +1542,18 @@ public class PerArrays {
      * @return Array con el dato ya insertado
      */
     public static String[] insertData(String array[], String data) {
+        array = Arrays.copyOf(array, array.length + 1);
+        array[array.length - 1] = data;
+        return array;
+    }
+
+    /**
+     * Método utilizado para insertar datos al final de un array
+     * @param array Array en el que introducir el dato
+     * @param data Dato a introducir
+     * @return Array con el dato ya insertado
+     */
+    public static Object[] insertData(Object array[], Object data) {
         array = Arrays.copyOf(array, array.length + 1);
         array[array.length - 1] = data;
         return array;
